@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"  class="h-100">
+{% include 'partial/head.html' %}
+
+<body class="container-fluid h-100 bg-dark">
+
+    <div class="d-flex h-100 w-100 flex-column">
+        
+        {% include 'partial/header.html' %}
+        
+        <main>
+            {% block main %}
+            {% endblock %}
+        </main>
+
+        {% include 'partial/footer.html' %}
+        
+    </div>
+    
+    {% include 'partial/sweetalert.html' %}
+    <script src="{% static 'vendor/bootstrap_5/js/bootstrap.min.js' %}"></script>
+
+</body>
+
+</html>
