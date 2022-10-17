@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+{% include 'main/partial/head.html' %}
+
+<body class="bg-dark h-100">
+
+    <main class="d-flex flex-nowrap h-100">
+        {% block main %}
+        {% endblock %}
+    </main>
+
+    {% include 'user/partial/sweetalert.html' %}
+    <script src="{% static 'vendor/bootstrap_5/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'main/assets/js/app.js' %}"></script>
+
+</body>
+
+</html>
