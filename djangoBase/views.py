@@ -1,6 +1,4 @@
-from django.shortcuts import render, HttpResponse
-from django.contrib import messages
+from django.shortcuts import render
 
 def cover(request):
-    messages.success(request, 'Welcome!')
     return render(request, 'index.html')
