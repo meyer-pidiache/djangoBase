@@ -5,9 +5,13 @@
 
 <body class="bg-dark h-100">
 
-    <main class="d-flex flex-nowrap h-100">
-        {% block main %}
-        {% endblock %}
+    <main class="d-flex flex-nowrap h-100 text-bg-dark">
+        {% include 'main/partial/sidebar.html' %}
+        <div class="m-4 d-flex h-100 w-100 flex-column">
+            {% block main %}
+            {% endblock %}
+            {% include 'partial/footer.html' %}
+        </div>
     </main>
 
     {% include 'user/partial/sweetalert.html' %}
