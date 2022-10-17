@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+{% include 'user/partial/head.html' %}
+
+<body class="text-center bg-dark text-white">
+
+    <main class="form-signin w-100 m-auto">
+        {% block main %}
+        {% endblock %}
+    </main>
+
+    {% include 'user/partial/sweetalert.html' %}
+    <script src="{% static 'vendor/bootstrap_5/js/bootstrap.min.js' %}"></script>
+
+</body>
+
+</html>

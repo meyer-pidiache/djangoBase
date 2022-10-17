@@ -1,6 +1,10 @@
 from django.shortcuts import render, HttpResponse
 from django.contrib import messages
 
-def register(request):
-    messages.info(request, 'Done')
-    return render(request, 'user/register.html')
+def signUp(request):
+    # messages.info(request, 'Done')
+    return render(request, 'user/signUp.html')
+
+def signIn(request):
+    # messages.info(request, 'Done')
+    return render(request, 'user/signIn.html')
